@@ -48,6 +48,6 @@ namespace EjerciciosTema1
             set { int_amarre = value; }
         }
 
-
+        //Aqui va el barco (con yate, o velero o deportiva)
     }
 }
