@@ -151,6 +151,7 @@ namespace EjerciciosTema1
                     for (int i = 0; i < ListaBarcos.Count; i++)
                     {
                         Console.WriteLine("=========================");
+                        Console.WriteLine("Tipo de barco: Velero");
                         Console.WriteLine("Punto de Amarre :" + Amarre);
                         Console.WriteLine("Matrícula: " + matricula);
                         Console.WriteLine("Nombre del propietario : " + Nombre);
@@ -169,6 +170,7 @@ namespace EjerciciosTema1
                     for (int i = 0; i < ListaBarcos.Count; i++)
                     {
                         Console.WriteLine("=========================");
+                        Console.WriteLine("Tipo de barco: Embarcación deportiva");
                         Console.WriteLine("Punto de Amarre :" + Amarre);
                         Console.WriteLine("Matrícula: " + matricula);
                         Console.WriteLine("Nombre del propietario : " + Nombre);
@@ -189,11 +191,13 @@ namespace EjerciciosTema1
                     for (int i = 0; i < ListaBarcos.Count; i++)
                     {
                         Console.WriteLine("=========================");
+                        Console.WriteLine("Tipo de barco: Yate");
                         Console.WriteLine("Punto de Amarre :" + Amarre);
                         Console.WriteLine("Matrícula: " + matricula);
                         Console.WriteLine("Nombre del propietario : " + Nombre);
                         Console.WriteLine("DNI : " + Dni);
                         Console.WriteLine("Precio: " + alquiler());
+
                         Console.WriteLine("=========================");
                     }
                     break;
