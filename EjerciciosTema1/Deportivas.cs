@@ -15,8 +15,9 @@ namespace EjerciciosTema1
 			get { return int_PotenciaCV; }
 			set { int_PotenciaCV = value; }
 		}
-        public Deportivas(int CV, string mat, int eslora, int anyo) : base(mat, eslora, anyo)
+        public Deportivas(int CV, string Mat, int Eslo, int An, String Nombre, String Dni, int Amarre) : base(Mat, Eslo, An, Nombre, Dni, Amarre)
         {
+            
            PotenciaCV = CV;
         }
         public override int calculo()

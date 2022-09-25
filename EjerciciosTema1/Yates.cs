@@ -24,7 +24,7 @@ namespace EjerciciosTema1
 			set { int_NumCamarotes = value; }
 		}
 
-        public Yates(int CV,int camarotes, string mat, int eslora, int anyo) : base(mat, eslora, anyo)
+        public Yates(int CV,int camarotes, string Mat, int Eslo, int An, String Nombre, String Dni, int Amarre) : base(Mat, Eslo, An, Nombre, Dni, Amarre)
         {
             PotenciaCV = CV;
 			NumCamarotes = camarotes;

@@ -31,11 +31,12 @@ namespace EjerciciosTema1
             set { date_Anyo = value; }
         }
 
-        public Barco(string Mat, int Eslo, int An) 
+        public Barco(string Mat, int Eslo, int An, String Nombre, String Dni, int Amarre ) 
         {
             Matricula = Mat ;
             Eslora = Eslo;
-            Anyo = An;  
+            Anyo = An; 
+            
         }
         public abstract int calculo();
         

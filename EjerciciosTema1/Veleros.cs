@@ -18,7 +18,7 @@ namespace EjerciciosTema1
         //Barco a = new Barco("ttt",6,1945);
 
         
-        public Veleros(int numv, string mat, int eslora, int anyo) :base(mat,eslora,anyo) {
+        public Veleros(int numv, string Mat, int Eslo, int An, String Nombre, String Dni, int Amarre) :base(Mat,Eslo,An,Nombre,Dni,Amarre) {
             NumVelas = numv;    
         }
         public override int calculo()
