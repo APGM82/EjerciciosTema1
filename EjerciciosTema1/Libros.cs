@@ -108,7 +108,7 @@ namespace EjerciciosTema1
                         String codigo = Console.ReadLine();
                         if (!int.TryParse(codigo, out codigoint))
                         {
-                            // Parsing failed, handle the error however you like
+                            
                         }
                         Console.WriteLine("¿Que elemento quiere modificar?");
                         Console.WriteLine("1: Título");

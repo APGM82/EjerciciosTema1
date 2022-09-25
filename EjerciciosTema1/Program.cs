@@ -34,9 +34,9 @@ internal class Program
                     //Console.WriteLine("¡Proximamente nueva funcionalidad!");
                     break;
                 case 3:
-                    //
-                    Console.WriteLine("Esta funcionalidad aún no ha sido implementada");
-                    Console.WriteLine("¡Proximamente nueva funcionalidad!");
+                    Alquiler.Selector();
+                    //Console.WriteLine("Esta funcionalidad aún no ha sido implementada");
+                    //Console.WriteLine("¡Proximamente nueva funcionalidad!");
                     break;
                 case 4:
                     //salir

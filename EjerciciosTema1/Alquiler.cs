@@ -52,6 +52,19 @@ namespace EjerciciosTema1
             set { int_amarre = value; }
         }
 
+
+        private static List<Barco> ListaBarcos = new List<Barco>();
+
+        public Alquiler()
+        {
+
+            Selector();
+            if (Valido) { Console.WriteLine("El precio de alquiler del barco es: " + alquiler()); }
+
+
+        }
+
+
         private static Barco b;
         static int ComprobarInt(String texto)
         {
@@ -85,14 +98,14 @@ namespace EjerciciosTema1
 
         static void datoscomunes()
         {
-            Console.WriteLine("Dime el nombre del barco");
+            Console.WriteLine("Nombre del Propietario:");
             Nombre = Console.ReadLine();
-            Console.WriteLine("Dime el DNI");
+            Console.WriteLine("DNI:");
             Dni = Console.ReadLine();
             FechaInicial = DateTime.Today;
-            Console.WriteLine("Dime la fecha de finalizacion");
+            Console.WriteLine("Fecha de finalizacion:");
             FechaFinal = Comprobar_Fecha();
-            Console.WriteLine("Dime la posicion del barco");
+            Console.WriteLine("Punto de Amarre:");
             int fuera;
             bool z=true;
             while (z) 
@@ -118,7 +131,7 @@ namespace EjerciciosTema1
         }
 
 
-        static void Selector()
+        public static void Selector()
         {
             Console.WriteLine("Seleccione una opción:");
             Console.WriteLine("1-Velero");
@@ -130,28 +143,28 @@ namespace EjerciciosTema1
                 case 1:
                     Valido = true;
                     datoscomunes();
-                    String texto = ("¿Cuantas velas tiene el barco?");
+                    String texto = ("Número de velas: ");
                     int velas = ComprobarInt(texto);
-                    b = new Veleros(velas, matricula, eslora, anio_fab);
-                    barquitos.Add(b);
+                    b = new Veleros(velas, matricula, eslora, anyo);
+                    ListaBarcos.Add(b);
                     break;
                 case 2:
                     Valido = true;
                     datoscomunes();
-                    texto = ("¿Cuantas CV tiene el barco?");
+                    texto = ("Caballos de potencia:");
                     int cv = ComprobarInt(texto);
                     b = new Deportivas(cv, matricula, eslora, anyo);
-                    barquitos.Add(b);
+                    ListaBarcos.Add(b);
                     break;
                 case 3:
                     Valido = true;
                     datoscomunes();
-                    texto = ("¿Cuantas CV tiene el barco?");
+                    texto = ("Caballos de potencia:");
                     cv = ComprobarInt(texto);
-                    texto = ("¿Cuantas camarotes tiene el barco?");
-                    int cama = ComprobarInt(texto);
-                    b = new Yates(cv, cama, matricula, eslora, anyo);
-                    barquitos.Add(b);
+                    texto = ("Número de camarotes:");
+                    int camaro = ComprobarInt(texto);
+                    b = new Yates(cv, camaro, matricula, eslora, anyo);
+                    ListaBarcos.Add(b);
                     break;
                 default:
                     Console.WriteLine("Escoge una opcion valida");
@@ -163,7 +176,7 @@ namespace EjerciciosTema1
         public int alquiler()
         {
             int precio = -1; ;
-            double dias = (Fecha_fin - Fecha_ini).TotalDays;
+            double dias = (FechaFinal - FechaInicial).TotalDays;
             precio = (int)dias * b.calculo();
             return precio;
         }

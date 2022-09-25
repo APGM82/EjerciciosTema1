@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EjerciciosTema1
 {
-    internal class Yates
+    internal class Yates:Barco
     {
 		private int int_potenciaCV;
 
@@ -24,6 +24,15 @@ namespace EjerciciosTema1
 			set { int_NumCamarotes = value; }
 		}
 
-
-	}
+        public Yates(int CV,int camarotes, string mat, int eslora, int anyo) : base(mat, eslora, anyo)
+        {
+            PotenciaCV = CV;
+			NumCamarotes = camarotes;
+        }
+        public override int calculo()
+        {
+            int aux = (Eslora * 10) * 12;
+            return aux;
+        }
+    }
 }
