@@ -12,8 +12,8 @@ namespace EjerciciosTema1
         private static int a;
         private int m;
         private int d;
-        private String textoFecha;
         private int compraracion;
+        private String textoFecha;
         public String TextoFecha   // property
         {
             get { return textoFecha; }   // get method
