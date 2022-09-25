@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjerciciosTema1
 {
-    internal class Deportivas
+    internal class Deportivas:Barco
     {
 		private int int_PotenciaCV;
 
@@ -15,6 +15,14 @@ namespace EjerciciosTema1
 			get { return int_PotenciaCV; }
 			set { int_PotenciaCV = value; }
 		}
-
-	}
+        public Deportivas(int CV, string mat, int eslora, int anyo) : base(mat, eslora, anyo)
+        {
+           PotenciaCV = CV;
+        }
+        public override int calculo()
+        {
+            int aux = (Eslora * 10) * 12;
+            return aux;
+        }
+    }
 }

@@ -21,5 +21,11 @@ namespace EjerciciosTema1
         public Veleros(int numv, string mat, int eslora, int anyo) :base(mat,eslora,anyo) {
             NumVelas = numv;    
         }
+        public override int calculo()
+        {
+            int aux = (Eslora * 10) * 12;
+            return aux;
+        }
+
     }
 }

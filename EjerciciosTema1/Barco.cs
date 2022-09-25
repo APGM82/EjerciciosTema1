@@ -37,6 +37,7 @@ namespace EjerciciosTema1
             Eslora = Eslo;
             Anyo = An;  
         }
+        public abstract int calculo();
         
     }
 }
