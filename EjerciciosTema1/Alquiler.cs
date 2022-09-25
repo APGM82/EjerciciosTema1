@@ -8,9 +8,11 @@ namespace EjerciciosTema1
 {
     internal class Alquiler
     {
-        private String str_Nombre;
-        
+        private static string matricula;
+        public static int eslora;
+        public static int anyo;
 
+        private String str_Nombre;
         public String Nombre
         {
             get { return str_Nombre; }

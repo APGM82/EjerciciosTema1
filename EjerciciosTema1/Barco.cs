@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace EjerciciosTema1
 {
-    internal class Barco
+    abstract class Barco
     {
+        private String str_Matricula;
+
+        public String Matricula
+        {
+            get { return str_Matricula; }
+            set { str_Matricula = value; }
+        }
+
         private int int_Eslora;
 
         public int Eslora
@@ -15,11 +23,20 @@ namespace EjerciciosTema1
             get { return int_Eslora; }
             set { int_Eslora = value; }
         }
+        private int date_Anyo;
 
-        /*public barcos(int Eslora) 
+        public int Anyo
         {
-            
+            get { return date_Anyo; }
+            set { date_Anyo = value; }
         }
-        */
+
+        public Barco(string Mat, int Eslo, int An) 
+        {
+            Matricula = Mat ;
+            Eslora = Eslo;
+            Anyo = An;  
+        }
+        
     }
 }
